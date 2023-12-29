@@ -6,9 +6,25 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
 
     // Если не используем typescript - нужен babel-loader
     const typescriptLoader = {
-        test: /\.tsx?$/,
+        test: /\.tsx?$/i,
         use: 'ts-loader',
         exclude: /node_modules/,
+    }
+
+    // Преобразовывает svg-иконки в react-компоненты
+    const svgLoader = {
+        test: /\.svg$/,
+        // issuer: /\.[jt]sx?$/,
+        use: ['@svgr/webpack'],
+    }
+
+    const fileLoader = {
+        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+        use: [
+            {
+                loader: 'file-loader',
+            },
+        ],
     }
 
     const cssLoader = {
@@ -34,6 +50,8 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     }
 
     return [
+        fileLoader,
+        svgLoader,
         typescriptLoader,
         cssLoader
     ]
