@@ -18,3 +18,6 @@ declare module "*.svg" {
 declare module "*.png"
 declare module "*.jpg"
 declare module "*.jpeg"
+
+// Global variable used in i18n.ts and buildPlugins.ts to determine whether mode is development or production
+declare const __IS_DEV__: boolean
