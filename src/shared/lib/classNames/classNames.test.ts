@@ -7,21 +7,27 @@ describe('classNames', () => {
 
     test('with additional class', () => {
         const expectedClass = 'someClass class1 class2';
-        expect(classNames('someClass', {}, ['class1', 'class2'])).toBe(expectedClass);
+        expect(classNames('someClass', {}, ['class1', 'class2']))
+            .toBe(expectedClass);
     });
 
     test('with mods', () => {
         const expectedClass = 'someClass class1 class2 hovered scrollable';
-        expect(classNames('someClass', { hovered: true, scrollable: true }, ['class1', 'class2'])).toBe(expectedClass);
+        const mods = { hovered: true, scrollable: true };
+        expect(classNames('someClass', mods, ['class1', 'class2']))
+            .toBe(expectedClass);
     });
 
     test('with mod false', () => {
         const expectedClass = 'someClass class1 class2 hovered';
-        expect(classNames('someClass', { hovered: true, scrollable: false }, ['class1', 'class2'])).toBe(expectedClass);
+        const mods = { hovered: true, scrollable: false };
+        expect(classNames('someClass', mods, ['class1', 'class2']))
+            .toBe(expectedClass);
     });
 
     test('with mod undefined', () => {
         const expectedClass = 'someClass class1 class2 hovered';
-        expect(classNames('someClass', { hovered: true, scrollable: undefined }, ['class1', 'class2'])).toBe(expectedClass);
+        expect(classNames('someClass', { hovered: true, scrollable: undefined }, ['class1', 'class2']))
+            .toBe(expectedClass);
     });
 });

@@ -106,7 +106,7 @@ export default {
     // moduleNameMapper: {},
 
     /*  An array of regexp pattern strings, matched against all module
-        paths before considered 'visible' to the module loader 
+        paths before considered 'visible' to the module loader
     */
     // modulePathIgnorePatterns: [],
 
@@ -150,7 +150,7 @@ export default {
     */
     // setupFiles: [],
 
-    /*  A list of paths to modules that run some code 
+    /*  A list of paths to modules that run some code
         to configure or set up the testing framework before each test
     */
     // setupFilesAfterEnv: [],
@@ -169,7 +169,7 @@ export default {
     // Adds a location field to test results
     // testLocationInResults: false,
 
-    /*  An array of regexp pattern strings that are matched 
+    /*  An array of regexp pattern strings that are matched
         against all test paths, matched tests are skipped
     */
     // testPathIgnorePatterns: [
@@ -215,7 +215,7 @@ export default {
     // verbose: undefined,
 
     /*  An array of regexp patterns that are matched against
-        all source file paths before re-running tests in watch mode 
+        all source file paths before re-running tests in watch mode
     */
     // watchPathIgnorePatterns: [],
 
