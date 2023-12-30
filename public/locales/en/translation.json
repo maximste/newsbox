@@ -1,4 +1,5 @@
 {
-    "Тестовый пример": "Test example",
-    "Язык": "English"
+    "Language": "Русский",
+    "Main": "Main",
+    "About": "About"
 }

@@ -5,7 +5,7 @@ const MainPage = () => {
 
     return (
         <div>
-            {t('Содержание основной страницы')}
+            {t('Main page content')}
         </div>
     );
 };
