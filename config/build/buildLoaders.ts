@@ -14,8 +14,28 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     // Преобразовывает svg-иконки в react-компоненты
     const svgLoader = {
         test: /\.svg$/,
-        // issuer: /\.[jt]sx?$/,
         use: ['@svgr/webpack'],
+    }
+
+    const babelLoader = {
+        test: /\.(js|jsx|ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env'],
+                "plugins": [
+                    [
+                        "i18next-extract",
+                        {
+                            locales: ['ru', 'en'],
+                            keyAsDefaultValue: true,
+                        }
+                    ]
+                ]
+                
+            }
+        }
     }
 
     const fileLoader = {
@@ -52,6 +72,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     return [
         fileLoader,
         svgLoader,
+        babelLoader,
         typescriptLoader,
         cssLoader
     ]
