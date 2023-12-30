@@ -1,4 +1,4 @@
-// Некий самописный аналог библиотеки https://www.npmjs.com/package/classnames 
+// Некий самописный аналог библиотеки https://www.npmjs.com/package/classnames
 type Mods = Record<string, boolean | string>
 
 export function classNames(cls: string, mods: Mods = {}, additional: string[] = []): string {
@@ -7,10 +7,10 @@ export function classNames(cls: string, mods: Mods = {}, additional: string[] = 
         ...additional.filter(Boolean),
         ...Object.entries(mods)
             .filter(([className, value]) => Boolean(value))
-            .map(([className, value]) => className)
-    ].join(' ')
+            .map(([className, value]) => className),
+    ].join(' ');
 }
 
 // Пример реализации
 // classNames('remove-btn', {hovered: false, selectable: true, red: false}, ['withPadings'])
-// результат: 'remove-btn selectable withPaddings' 
+// результат: 'remove-btn selectable withPaddings'

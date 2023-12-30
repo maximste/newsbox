@@ -1,20 +1,20 @@
-import './styles/index.scss'
+import './styles/index.scss';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
-import AppRouter from './providers/router/ui/AppRouter';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 import { Suspense } from 'react';
+import AppRouter from './providers/router/ui/AppRouter';
 
 const App = () => {
-    const { theme } = useTheme()
+    const { theme } = useTheme();
 
     return (
         <div className={classNames('app', {}, [theme])}>
             {/* Suspense is used due to localization is async */}
             <Suspense fallback="">
                 <Navbar />
-                <main className='content-page'>
+                <main className="content-page">
                     <Sidebar />
                     <AppRouter />
                 </main>
