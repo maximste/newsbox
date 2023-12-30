@@ -9,7 +9,9 @@
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
         "lint:scss": "npx stylelint \"**/*.scss\"",
-        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
+        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+        "jest:init": "jest --init",
+        "unit": "jest --config ./config/jest/jest.config.ts"
     },
     "author": "Maxim Steinbrecher",
     "license": "ISC",
@@ -41,7 +43,7 @@
         "@typescript-eslint/eslint-plugin": "^5.12.1",
         "@typescript-eslint/parser": "^5.12.1",
         "babel-loader": "^8.2.3",
-        "babel-plugin-i18next-extract": "^0.8.3", 
+        "babel-plugin-i18next-extract": "^0.8.3",
         "copy-webpack-plugin": "^10.2.4",
         "css-loader": "^6.6.0",
         "eslint": "^8.10.0",
