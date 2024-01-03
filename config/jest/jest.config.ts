@@ -3,20 +3,18 @@
  * https://jestjs.io/docs/configuration
  */
 
+import path from 'path';
+
 export default {
     // Automatically clear mock calls, instances and results before every test
     clearMocks: true,
 
+    // The test environment that will be used for testing
+    testEnvironment: 'jsdom',
+
     // An array of regexp pattern strings used to skip coverage collection
     coveragePathIgnorePatterns: [
         '\\\\node_modules\\\\',
-    ],
-
-    /* An array of directory names to be searched recursively
-    up from the requiring module's location
-    */
-    moduleDirectories: [
-        'node_modules',
     ],
 
     // An array of file extensions your modules use
@@ -29,17 +27,35 @@ export default {
         'node',
     ],
 
-    // The root directory that Jest should scan for tests and modules within
-    rootDir: '../../',
+    /* An array of directory names to be searched recursively
+    up from the requiring module's location
+    */
+    moduleDirectories: [
+        'node_modules',
+    ],
 
-    // The test environment that will be used for testing
-    testEnvironment: 'jsdom',
+    modulePaths: [
+        '<rootDir>src',
+    ],
 
     // The glob patterns Jest uses to detect test files
     testMatch: [
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)',
         '**/?(*.)+(spec|test).[tj]s?(x)',
     ],
+
+    // The root directory that Jest should scan for tests and modules within
+    rootDir: '../../',
+
+    setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+
+    /* A map from regular expressions to module names or to arrays
+        of module names that allow to stub out resources with a single module
+    */
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        '\\.svg': path.resolve(__dirname, 'jestEmptyComponent'),
+    },
 
     // All imported modules in your tests should be mocked automatically
     // automock: false,
@@ -99,11 +115,6 @@ export default {
         maxWorkers: 2 will use a maximum of 2 workers.
     */
     // maxWorkers: "50%",
-
-    /* A map from regular expressions to module names or to arrays
-        of module names that allow to stub out resources with a single module
-    */
-    // moduleNameMapper: {},
 
     /*  An array of regexp pattern strings, matched against all module
         paths before considered 'visible' to the module loader
