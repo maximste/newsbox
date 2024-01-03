@@ -1,4 +1,3 @@
-import webpack from 'webpack';
 import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
 import { BuildOptions } from './types/config';
 
@@ -12,5 +11,8 @@ export function buildDevServer(options: BuildOptions): DevServerConfiguration {
         historyApiFallback: true,
         // Enable webpack's Hot Module Replacement feature
         hot: true,
+        client: {
+            overlay: false,
+        },
     };
 }

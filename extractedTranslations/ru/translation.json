@@ -6,6 +6,9 @@
   "Main page content": "Main page content",
   "Main page content12243435345345": "Main page content12243435345345",
   "Page not found": "Page not found",
+  "RefreshError": "RefreshError",
+  "RefreshPage": "RefreshPage",
+  "UnexpectedError": "UnexpectedError",
   "main": {
     "Main page content": "Main page content"
   }
