@@ -1,7 +1,10 @@
 {
   "About": "About",
   "About page content": "About page content",
+  "Hello world": "Hello world",
   "Language": "Language",
+  "Login": "Login",
+  "LoginForm": "LoginForm",
   "Main": "Main",
   "Main page content": "Main page content",
   "Main page content12243435345345": "Main page content12243435345345",
@@ -12,5 +15,6 @@
   "UnexpectedError": "UnexpectedError",
   "main": {
     "Main page content": "Main page content"
-  }
+  },
+  "toggle": "toggle"
 }

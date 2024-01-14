@@ -6,5 +6,7 @@
   "Page not found": "Page not found",
   "UnexpectedError": "Unexpected error",
   "RefreshPage": "Refresh page",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "Login": "LogIn",
+  "LoginForm": "Login form"
 }

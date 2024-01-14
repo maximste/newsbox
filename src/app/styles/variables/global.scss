@@ -1,4 +1,5 @@
 :root {
+    // Font styles
     --font-family-main: consolas, "Times New Roman", serif;
     --font-size-s: 12px;
     --line-height-s: 16px;
@@ -13,8 +14,14 @@
     --line-height-xl: 40px;
     --font-xl: var(--font-size-xl) / var(--line-height-l) var(--font-family-main);
 
-    // Размеры
+    // Sizing
     --navbar-height: 60px;
     --sidebar-width: 300px;
     --sidebar-width-collapsed: 60px;
+
+    // Z-indexes
+    --modal-z-index: 10;
+
+    // Colors
+    --overlay-color: rgb(0 0 0 / 60%);
 }
