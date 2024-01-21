@@ -3,10 +3,18 @@
   "ShortLang": "EN",
   "Main": "Главная",
   "About": "О нас",
+  "About page content": "Содержание главной страницы",
+  "Main page content": "Содержание страницы о нас",
   "Page not found": "Страница не найдена",
   "UnexpectedError": "Произошла непредвиденная ошибка",
   "RefreshPage": "Обновить страницу",
   "Toggle": "Переключить",
   "LoginForm": "Форма авторизации",
-  "Login": "Войти"
+  "Login": "Войти",
+  "increment": "Увеличить",
+  "decrement": "уменьшить",
+  "about.AboutPageContent": "Содержание главной страницы",
+  "AboutPageContent": "Содержание страницы о нас",
+  "MainPageContent": "Содержание главной страницы",
+  "main.MainPageContent": "Содержание главной страницы"
 }

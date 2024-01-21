@@ -2,11 +2,17 @@
   "Language": "Русский",
   "ShortLang": "РУ",
   "Main": "Main",
+  "AboutPageContent": "About page content",
+  "MainPageContent": "About page content",
   "About": "About",
   "Page not found": "Page not found",
   "UnexpectedError": "Unexpected error",
   "RefreshPage": "Refresh page",
   "Toggle": "Toggle",
   "Login": "LogIn",
-  "LoginForm": "Login form"
+  "LoginForm": "Login form",
+  "increment": "increment",
+  "decrement": "decrement",
+  "about.AboutPageContent": "About page content",
+  "main.MainPageContent": "Main page content"
 }

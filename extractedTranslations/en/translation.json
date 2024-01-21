@@ -13,6 +13,8 @@
   "RefreshPage": "RefreshPage",
   "Toggle": "Toggle",
   "UnexpectedError": "UnexpectedError",
+  "decrement": "",
+  "increment": "",
   "main": {
     "Main page content": "Main page content"
   },
