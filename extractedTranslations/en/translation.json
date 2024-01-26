@@ -1,6 +1,7 @@
 {
   "About": "About",
   "About page content": "About page content",
+  "AboutPageContent": "AboutPageContent",
   "Hello world": "Hello world",
   "Language": "Language",
   "Login": "",
@@ -8,6 +9,7 @@
   "Main": "Main",
   "Main page content": "Main page content",
   "Main page content12243435345345": "Main page content12243435345345",
+  "MainPageContent": "MainPageContent",
   "Page not found": "Page not found",
   "RefreshError": "RefreshError",
   "RefreshPage": "RefreshPage",
